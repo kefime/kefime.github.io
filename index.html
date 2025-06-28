@@ -56,9 +56,14 @@
       background-color: #003382;
     }
 
+    .icon-wrapper {
+      width: 96px;
+      overflow: clip;
+    }
+
     .icon-img {
-      width: 24px;
-      height: 24px;
+      width: 100%;
+      display: block;
     }
   </style>
 </head>
@@ -69,7 +74,9 @@
 
   <div class="top-left-controls">
     <a href="mailto:hello@example.com" class="email-button">Contact Us</a>
-    <img src="kefi.png" alt="Kefi Icon" class="icon-img" />
+    <div class="icon-wrapper">
+      <img src="kefi.png" alt="Kefi Icon" class="icon-img" />
+    </div>
   </div>
 </body>
 </html>
