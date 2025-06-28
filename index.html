@@ -9,18 +9,32 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      width: 100%;
     }
 
     body {
       background: url('mail.png') center center / cover no-repeat fixed;
       font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.01); /* Transparent overlay */
     }
 
     .email-button {
-      margin: 20px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
       padding: 12px 20px;
       background-color: #004aad;
       color: #fff;
@@ -29,7 +43,7 @@
       font-size: 16px;
       text-decoration: none;
       cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 10;
     }
 
     .email-button:hover {
@@ -38,6 +52,7 @@
   </style>
 </head>
 <body>
+  <div class="overlay"></div>
   <a href="mailto:hello@example.com" class="email-button">Contact Us</a>
 </body>
 </html>
