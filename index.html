@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mail Connection Page</title>
+  <link rel="icon" type="image/png" href="kefi.png" />
   <style>
     html, body {
       margin: 0;
@@ -34,6 +35,9 @@
       top: 20px;
       left: 20px;
       z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       padding: 12px 20px;
       background-color: #004aad;
       color: #fff;
@@ -43,6 +47,11 @@
       text-decoration: none;
       cursor: pointer;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .email-button img {
+      height: 20px;
+      width: 20px;
     }
 
     .email-button:hover {
@@ -55,6 +64,9 @@
     <img src="mail.png" class="stretch" alt="Mail background" />
   </div>
 
-  <a href="mailto:hello@example.com" class="email-button">Contact Us</a>
+  <a href="mailto:hello@example.com" class="email-button">
+    Contact Us
+    <img src="kefi.png" alt="Kefi Logo" />
+  </a>
 </body>
 </html>
